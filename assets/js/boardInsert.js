@@ -21,8 +21,8 @@ const addBoard = async (event) => {
     //2. 서버에 데이터 전송하기
     try{
 
-        let res = await axios.post("http://localhost:8081/api/board/register", bData); //테스트용
-        // let res = await axios.post("/api/board/register", bData);
+        // let res = await axios.post("http://localhost:8081/api/board/register", bData); //테스트용
+        let res = await axios.post("/api/board/register", bData);
 
         console.log(res.data);    
 
