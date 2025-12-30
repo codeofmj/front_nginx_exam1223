@@ -31,8 +31,8 @@ const getBoardDetail = async () => {
         //첨부파일이 없을 때 
         if(res.data.b_file_path){ // 파일이 있는 경우
 
-            // downloadLink.href = `http://localhost:8081/api/board/${idx}/download`; //테스트용
-            downloadLink.href = `/api/board/${idx}/download`; 
+            downloadLink.href = `http://localhost:8081/api/board/${idx}/download`; //테스트용
+            // downloadLink.href = `/api/board/${idx}/download`; 
 
         }else{ //파일이 없는 경우
             downloadLink.style.display = "none";
